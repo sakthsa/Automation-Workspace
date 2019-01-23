@@ -1,0 +1,12 @@
+package com.ss.selenium.annotations;
+
+
+
+public class A {
+	
+	@Test
+	public void testing(){
+		
+	}
+
+}

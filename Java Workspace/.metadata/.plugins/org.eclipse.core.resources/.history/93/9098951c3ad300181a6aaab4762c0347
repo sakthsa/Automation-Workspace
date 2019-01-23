@@ -1,0 +1,17 @@
+package com.ss.test;
+
+public class StrFunc {
+
+	public static void main(String[] args) {
+		String str = "I am married";
+		
+		String[] splitStr = str.split(" ");
+		
+		for(String s:splitStr) {
+			System.out.println(s);
+			System.out.println(s.length());
+		}
+
+	}
+
+}

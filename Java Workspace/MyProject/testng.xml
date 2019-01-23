@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name = "Automation suite">
+<test name = "Test Name">
+<classes>
+<class name = "com.ss.selenium.annotations.A" />
+<class name = "com.ss.selenium.annotations.B"></class>
+</classes>
+</test>
+</suite>

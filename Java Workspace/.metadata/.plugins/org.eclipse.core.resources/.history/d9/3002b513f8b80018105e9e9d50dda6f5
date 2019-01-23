@@ -1,0 +1,5 @@
+package com.ss.selenium.annotations;
+
+public class A {
+
+}

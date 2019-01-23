@@ -1,0 +1,12 @@
+package com.ss.test;
+
+public class ForLoop {
+
+	public static void main(String[] args) {
+		int count = 0;
+		
+		
+		
+	}
+
+}
