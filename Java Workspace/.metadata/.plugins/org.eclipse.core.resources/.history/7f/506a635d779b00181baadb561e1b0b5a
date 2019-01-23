@@ -1,0 +1,18 @@
+package com.ss.test;
+
+public class ForLoop {
+
+	public static void main(String[] args) {
+		int count = 0;
+		int arr[] = {1,1,2,3,4};
+		aa:
+			
+		for(int i : arr) {
+			count++;
+		}
+		System.out.println(count);
+		
+		
+	}
+
+}
