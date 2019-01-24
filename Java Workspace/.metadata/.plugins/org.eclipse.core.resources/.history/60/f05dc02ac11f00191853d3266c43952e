@@ -1,0 +1,8 @@
+package com.ss.testNG.listener;
+
+import org.testng.ITestListener;
+
+public class Listener implements ITestListener {
+	
+
+}

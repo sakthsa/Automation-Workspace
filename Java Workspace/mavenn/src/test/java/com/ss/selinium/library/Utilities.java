@@ -37,6 +37,8 @@ public class Utilities {
 	public static WebDriver setChromeDriver(){
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
+		driver.get("https://opensource-demo.orangehrmlive.com/");
+		driver.manage().window().maximize();
 		return driver;
 
 	}
