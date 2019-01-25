@@ -2,6 +2,7 @@ package Tests;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestListener;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Listeners;
@@ -12,7 +13,7 @@ import com.ss.selinium.library.Utilities;
 import PageFactory.Login;
 
 
-@Listeners(com.ss.testNG.listener.Listener.class)
+//@Listeners(com.ss.testNG.listener.Listener.class)
 public class LoginTest {
 	
 	
@@ -31,7 +32,7 @@ public class LoginTest {
 		logObj.clickLogin();
 	}
 	
-	@Test
+	//@Test
 	public void test2() {
 		Login logObj = new Login(driver);
 		logObj.setUserName("Admin");
@@ -40,7 +41,12 @@ public class LoginTest {
 	}
 	
 	@AfterTest
-	public void testTearDown() {
+	public void testTearDown(ITestResult result) {
+		if(ITestResult.FAILURE == result.getStatus()) {
+			Utilities.captureScreenShot(driver, result.getTestName());
+		}
 		driver.quit();
 	}
+	
+	
 }

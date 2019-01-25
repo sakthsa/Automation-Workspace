@@ -23,6 +23,7 @@ import com.google.common.base.Function;
 
 public class Utilities {
 	
+	
 	public static void captureScreenShot(WebDriver driver,String FileName ) {
 		try {
 			TakesScreenshot ts = (TakesScreenshot)driver;

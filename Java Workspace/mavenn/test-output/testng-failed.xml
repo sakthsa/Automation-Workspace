@@ -5,9 +5,9 @@
     <classes>
       <class name="Tests.LoginTest">
         <methods>
+          <include name="test1"/>
           <include name="suiteSetup"/>
           <include name="testTearDown"/>
-          <include name="test2"/>
         </methods>
       </class> <!-- Tests.LoginTest -->
     </classes>

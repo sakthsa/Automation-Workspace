@@ -1,24 +1,14 @@
 package PageFactory;
 
-<<<<<<< HEAD
-=======
 import org.openqa.selenium.WebDriver;
->>>>>>> 12ae0808844c1ec79e309dfe9cb339800d60c7e4
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class Login {
 	
-<<<<<<< HEAD
-	@FindBy(xpath="//input[@id ='txtUsername']")
-	
-	
-	String sass;
-	
-	
-	WebElement LoginUsername;
-=======
+
 	Login log;
 	
 	WebDriver driver;
@@ -29,7 +19,7 @@ public class Login {
 	@FindBy(xpath="//input[@id='txtPassword']")
 	WebElement password;
 	
-	@FindBy(name="Submit")
+	@FindBy(name="Submitt")
 	WebElement logIn;
 	
 	public Login(WebDriver driver) {
@@ -53,9 +43,7 @@ public class Login {
 	
 	
 
-	
->>>>>>> 12ae0808844c1ec79e309dfe9cb339800d60c7e4
-	
+
 	
 
 }
