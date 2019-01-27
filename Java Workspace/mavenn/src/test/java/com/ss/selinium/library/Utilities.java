@@ -21,8 +21,7 @@ import org.openqa.selenium.support.ui.Wait;
 
 import com.google.common.base.Function;
 
-public class Utilities {
-	
+public class Utilities extends ConfigReader{
 	
 	public static void captureScreenShot(WebDriver driver,String FileName ) {
 		try {
@@ -36,16 +35,16 @@ public class Utilities {
 	}
 	
 	public static WebDriver setChromeDriver(){
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver.exe");
+		ConfigReader con = new ConfigReader();
+		System.setProperty("webdriver.chrome.driver", con.getChromePath());
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://opensource-demo.orangehrmlive.com/");
-		driver.manage().window().maximize();
 		return driver;
-
 	}
 	
+	
 	public static WebDriver setFirefoxDriver() {
-		System.setProperty("webdriver.gecko.driver","D:\\JAR\\geckodriver.exe");
+		ConfigReader con = new ConfigReader();
+		System.setProperty("webdriver.gecko.driver",con.getFirefoxPath());
 		WebDriver driver = new FirefoxDriver();
 		return driver;
 	}

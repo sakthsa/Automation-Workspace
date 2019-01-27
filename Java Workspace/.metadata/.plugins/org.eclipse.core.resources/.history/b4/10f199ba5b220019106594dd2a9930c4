@@ -1,0 +1,17 @@
+package Tests;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeMethod;
+
+import com.ss.selinium.library.Utilities;
+
+public class BaseTest {
+	
+	WebDriver driver;
+	
+	@BeforeMethod
+	public void setUp() {
+		driver = Utilities.setChromeDriver();
+	}
+
+}

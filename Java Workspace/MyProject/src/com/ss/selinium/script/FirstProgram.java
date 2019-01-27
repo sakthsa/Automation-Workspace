@@ -33,34 +33,34 @@ public class FirstProgram {
 	
 	@Test
 	void test1() {
-		System.out.println("inside testcase");
+		System.out.println("inside testcase 1");
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
 	}
 	
 	@Test
 	void test2() {
-		System.out.println("inside testcase");
+		System.out.println("inside testcase 2");
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
 	}
 	
 	@Test
 	void test3() {
-		System.out.println("inside testcase");
+		System.out.println("inside testcase 3");
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
 	}
 	@Test
 	void test4() {
-		System.out.println("inside testcase");
+		System.out.println("inside testcase 4");
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
 	}
 	
 	@Test
 	void test5() {
-		System.out.println("inside testcase");
+		System.out.println("inside testcase 5");
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
 	}

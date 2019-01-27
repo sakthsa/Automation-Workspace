@@ -19,7 +19,7 @@ public class Login {
 	@FindBy(xpath="//input[@id='txtPassword']")
 	WebElement password;
 	
-	@FindBy(name="Submitt")
+	@FindBy(name="Submit")
 	WebElement logIn;
 	
 	public Login(WebDriver driver) {

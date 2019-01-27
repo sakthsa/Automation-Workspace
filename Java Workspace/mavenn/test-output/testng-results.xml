@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="308" started-at="2019-01-24T16:40:32Z" finished-at="2019-01-24T16:40:33Z">
+  <suite name="Default suite" duration-ms="746" started-at="2019-01-27T17:40:43Z" finished-at="2019-01-27T17:40:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="308" started-at="2019-01-24T16:40:32Z" finished-at="2019-01-24T16:40:33Z">
+    <test name="Default test" duration-ms="746" started-at="2019-01-27T17:40:43Z" finished-at="2019-01-27T17:40:43Z">
       <class name="Tests.LoginTest">
-        <test-method status="PASS" signature="suiteSetup()[pri:0, instance:Tests.LoginTest@29ee9faa]" name="suiteSetup" is-config="true" duration-ms="10027" started-at="2019-01-24T16:40:22Z" finished-at="2019-01-24T16:40:32Z">
+        <test-method status="PASS" signature="suiteSetup()[pri:0, instance:Tests.LoginTest@29ee9faa]" name="suiteSetup" is-config="true" duration-ms="13232" started-at="2019-01-27T17:40:29Z" finished-at="2019-01-27T17:40:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suiteSetup -->
-        <test-method status="FAIL" signature="test1()[pri:0, instance:Tests.LoginTest@29ee9faa]" name="test1" duration-ms="262" started-at="2019-01-24T16:40:32Z" finished-at="2019-01-24T16:40:33Z">
+        <test-method status="FAIL" signature="test1()[pri:0, instance:Tests.LoginTest@29ee9faa]" name="test1" duration-ms="450" started-at="2019-01-27T17:40:43Z" finished-at="2019-01-27T17:40:43Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"name","selector":"Submitt"}
@@ -22,8 +22,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'HOME-VAIO', ip: '192.168.225.178', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\HOME\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50197}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: 52e31b16c225166229c15d89d4a7285c
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\HOME\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53464}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 5dcdc5c6ead1e788f71c958277eea9b6
 *** Element info: {Using=name, value=Submitt}]]>
             </message>
             <full-stacktrace>
@@ -35,8 +35,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'HOME-VAIO', ip: '192.168.225.178', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\HOME\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50197}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: 52e31b16c225166229c15d89d4a7285c
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\HOME\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53464}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 5dcdc5c6ead1e788f71c958277eea9b6
 *** Element info: {Using=name, value=Submitt}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -58,7 +58,7 @@ at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(Def
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy9.click(Unknown Source)
 at PageFactory.Login.clickLogin(Login.java:41)
-at Tests.LoginTest.test1(LoginTest.java:32)
+at Tests.LoginTest.test1(LoginTest.java:33)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -90,7 +90,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="FAIL" signature="testTearDown(org.testng.ITestResult)[pri:0, instance:Tests.LoginTest@29ee9faa]" name="testTearDown" is-config="true" duration-ms="0" started-at="2019-01-24T16:40:33Z" finished-at="2019-01-24T16:40:33Z">
+        <test-method status="FAIL" signature="testTearDown(org.testng.ITestResult)[pri:0, instance:Tests.LoginTest@29ee9faa]" name="testTearDown" is-config="true" duration-ms="0" started-at="2019-01-27T17:40:43Z" finished-at="2019-01-27T17:40:43Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[

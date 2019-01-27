@@ -19,6 +19,7 @@
     <classes>
       <class name="com.ss.selinium.script.FirstProgram">
         <methods>
+          <include name="test4"/>
           <include name="setDriver"/>
           <include name="teardown"/>
           <include name="test5"/>

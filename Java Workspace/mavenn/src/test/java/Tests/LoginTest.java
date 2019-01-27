@@ -3,6 +3,7 @@ package Tests;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.Reporter;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Listeners;
@@ -14,15 +15,12 @@ import PageFactory.Login;
 
 
 //@Listeners(com.ss.testNG.listener.Listener.class)
-public class LoginTest {
+public class LoginTest extends BaseTest {
 	
 	
-	WebDriver driver;
 	
-	@BeforeSuite
-	public void suiteSetup() {
-		driver = Utilities.setChromeDriver();
-	}
+	
+	
 	
 	@Test
 	public void test1() {
@@ -40,13 +38,7 @@ public class LoginTest {
 		logObj.clickLogin();
 	}
 	
-	@AfterTest
-	public void testTearDown(ITestResult result) {
-		if(ITestResult.FAILURE == result.getStatus()) {
-			Utilities.captureScreenShot(driver, result.getTestName());
-		}
-		driver.quit();
-	}
+	
 	
 	
 }

@@ -1,0 +1,10 @@
+package com.ss.selinium.library;
+
+public class ConfigReader {
+	
+	
+	public ConfigReader() {
+		
+	}
+
+}
