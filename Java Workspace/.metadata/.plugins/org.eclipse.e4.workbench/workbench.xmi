@@ -105,7 +105,7 @@
               </children>
             </children>
             <children xsi:type="basic:PartSashContainer" xmi:id="_M0aQix_yEem4u6DNjn_wcg" containerData="7500" selectedElement="_M0aQlR_yEem4u6DNjn_wcg">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_M0aQjB_yEem4u6DNjn_wcg" containerData="2707" selectedElement="_M0aQjR_yEem4u6DNjn_wcg" horizontal="true">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_M0aQjB_yEem4u6DNjn_wcg" containerData="9000" selectedElement="_M0aQjR_yEem4u6DNjn_wcg" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_M0aQjR_yEem4u6DNjn_wcg" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_MzwwQB_yEem4u6DNjn_wcg"/>
                 <children xsi:type="basic:PartSashContainer" xmi:id="_M0aQjh_yEem4u6DNjn_wcg" containerData="2500" selectedElement="_M0aQkR_yEem4u6DNjn_wcg">
                   <children xsi:type="basic:PartStack" xmi:id="_M0aQjx_yEem4u6DNjn_wcg" elementId="org.eclipse.mylyn.tasks.ui.views.tasksMStack" containerData="5000" selectedElement="_M0aQkB_yEem4u6DNjn_wcg">
@@ -131,7 +131,7 @@
                   </children>
                 </children>
               </children>
-              <children xsi:type="basic:PartStack" xmi:id="_M0aQlR_yEem4u6DNjn_wcg" elementId="bottom" containerData="7293" selectedElement="_M0aQmh_yEem4u6DNjn_wcg">
+              <children xsi:type="basic:PartStack" xmi:id="_M0aQlR_yEem4u6DNjn_wcg" elementId="bottom" containerData="1000" selectedElement="_M0aQmh_yEem4u6DNjn_wcg">
                 <tags>org.eclipse.e4.secondaryDataStack</tags>
                 <tags>Java</tags>
                 <tags>active</tags>
@@ -216,7 +216,7 @@
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_b2AAYB_yEem4u6DNjn_wcg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="LoginTest.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;LoginTest.java&quot; partName=&quot;LoginTest.java&quot; title=&quot;LoginTest.java&quot; tooltip=&quot;mavenn/src/test/java/Tests/LoginTest.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/mavenn/src/test/java/Tests/LoginTest.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;368&quot; selectionTopPixel=&quot;165&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;LoginTest.java&quot; partName=&quot;LoginTest.java&quot; title=&quot;LoginTest.java&quot; tooltip=&quot;mavenn/src/test/java/Tests/LoginTest.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/mavenn/src/test/java/Tests/LoginTest.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;368&quot; selectionTopPixel=&quot;75&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -388,7 +388,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_MXqqIB_yEem4u6DNjn_wcg" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_MX9lEB_yEem4u6DNjn_wcg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_LtiIEB_yEem4u6DNjn_wcg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="__gCzgCHKEem4cIJ8OsPixQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_LtiIEB_yEem4u6DNjn_wcg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_MXrRMB_yEem4u6DNjn_wcg" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -419,7 +419,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_MXtGYB_yEem4u6DNjn_wcg" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_MYBPcB_yEem4u6DNjn_wcg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_Ltg58B_yEem4u6DNjn_wcg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="__gI6ICHKEem4cIJ8OsPixQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_Ltg58B_yEem4u6DNjn_wcg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_MXttcB_yEem4u6DNjn_wcg" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
