@@ -22,6 +22,13 @@ public class Login {
 	@FindBy(name="Submit")
 	WebElement logIn;
 	
+	@FindBy(xpath="//a[contains(text(),'Welcome')]")
+	WebElement userNameTitle;
+	
+	@FindBy(xpath="//a[text()='Logout']")
+	WebElement logOut;
+	
+	
 	public Login(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -43,6 +50,14 @@ public class Login {
 	
 	public String getPageTitle() {
 		return driver.getTitle();
+	}
+	
+	public void clickonUserID() {
+		userNameTitle.click();
+	}
+	
+	public void clickLogoutButton() {
+		logOut.click();
 	}
 
 

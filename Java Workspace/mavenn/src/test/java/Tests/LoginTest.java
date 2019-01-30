@@ -22,10 +22,6 @@ import jdk.nashorn.internal.runtime.regexp.joni.Config;
 public class LoginTest extends BaseTest {
 	
 	
-	
-	
-	
-	
 	@Test
 	public void test1() throws InterruptedException {
 		Login logObj = new Login(driver);
@@ -33,6 +29,7 @@ public class LoginTest extends BaseTest {
 		logObj.setPassword(configObj.getAdminPassword());
 		logObj.clickLogin();
 		assertEquals(logObj.getPageTitle(), "OrangeHRM");
+		clickonLogout();
 		Thread.sleep(5000);
 		
 	}

@@ -13,10 +13,13 @@ import org.testng.annotations.BeforeTest;
 import com.ss.selinium.library.ConfigReader;
 import com.ss.selinium.library.Utilities;
 
+import PageFactory.Login;
+
 public class BaseTest {
 	
 	WebDriver driver;
 	ConfigReader configObj = new ConfigReader();
+	Login logObj = new Login(driver);
 	
 	public ConfigReader getConfigReaderObj()
 	{
@@ -41,6 +44,13 @@ public class BaseTest {
 		}
 		
 	}
+	
+	public void clickonLogout() {
+		logObj.clickonUserID();
+		logObj.clickLogoutButton();
+		
+	}
+	
 	
 	@AfterSuite
 	public void suiteTearDown() {
