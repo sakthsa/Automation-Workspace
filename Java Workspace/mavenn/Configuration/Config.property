@@ -1,3 +1,5 @@
 URL = https://opensource-demo.orangehrmlive.com/
 ChromePath = ./src/test/resources/chromedriver.exe
 FirefoxPath = ./src/test/resources/geckodriver.exe
+AdminUserName = Admin
+AdminPassword = admin123

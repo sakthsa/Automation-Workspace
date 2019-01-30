@@ -35,11 +35,14 @@ public class ConfigReader {
 	
 	public String getFirefoxPath() {
 		return pro.getProperty("FirefoxPath");
-		 
-
 	}
 	
+	public String getAdminUsername() {
+		return pro.getProperty("AdminUserName");
+	}
 	
-	
+	public String getAdminPassword() {
+		return pro.getProperty("AdminPassword");
+	}
 
 }

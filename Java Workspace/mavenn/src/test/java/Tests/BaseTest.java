@@ -3,8 +3,11 @@ package Tests;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.Reporter;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 import com.ss.selinium.library.ConfigReader;
@@ -13,24 +16,36 @@ import com.ss.selinium.library.Utilities;
 public class BaseTest {
 	
 	WebDriver driver;
-	ConfigReader con = new ConfigReader();
+	ConfigReader configObj = new ConfigReader();
+	
+	public ConfigReader getConfigReaderObj()
+	{
+		return configObj;
+	}
 	
 	
-	@BeforeTest
+	@BeforeSuite
 	public void setUp() {
 		driver = Utilities.setChromeDriver();
-		driver.get(con.getURL());
+		driver.get(configObj.getURL());
 		driver.manage().window().maximize();
 		
 	}
 	
-	@AfterTest
+	
+	
+	@AfterMethod
 	public void testTearDown(ITestResult result) {
 		if(ITestResult.FAILURE == result.getStatus()) {
 			Utilities.captureScreenShot(driver, result.getTestName());
 		}
+		
+	}
+	
+	@AfterSuite
+	public void suiteTearDown() {
 		driver.quit();
-		Reporter.log("Driver connection closed", true);
+		//Reporter.log("Driver connection closed", true);
 	}
 
 }

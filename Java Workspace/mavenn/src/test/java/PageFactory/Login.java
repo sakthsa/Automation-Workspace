@@ -41,7 +41,9 @@ public class Login {
 		logIn.click();
 	}
 	
-	
+	public String getPageTitle() {
+		return driver.getTitle();
+	}
 
 
 	
