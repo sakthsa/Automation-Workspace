@@ -11,6 +11,8 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.ss.selinium.library.ConfigReader;
 import com.ss.selinium.library.Utilities;
 
@@ -24,27 +26,24 @@ public class LoginTest extends BaseTest {
 	
 	@Test
 	public void test1() throws InterruptedException {
-		Login logObj = new Login(driver);
 		logObj.setUserName(configObj.getAdminUsername());
 		logObj.setPassword(configObj.getAdminPassword());
 		logObj.clickLogin();
-		//assertEquals(logObj.getPageTitle(), "OrangeHRM");
-		clickonLogout();
-		Thread.sleep(5000);
+		assertEquals(logObj.getPageTitle(), "OrangeHRM");
+		Thread.sleep(2000);
+		clickonLogout();		
 		
 	}
 	
-	//@Test
+	@Test
 	public void test2() {
-		Login logObj = new Login(driver);
+		
+		ExtentHtmlReporter reporter = new ExtentHtmlReporter(file)
 		driver.navigate().to(configObj.getURL());
 		logObj.setUserName(configObj.getAdminUsername());
 		logObj.setPassword(configObj.getAdminPassword());
 		logObj.clickLogin();
-		assertEquals(logObj.getPageTitle(), "OrangeSRM");
+		assertEquals(logObj.getPageTitle(), "OrangeHRM");
 	}
-	
-	
-	
 	
 }

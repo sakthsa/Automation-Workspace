@@ -18,8 +18,8 @@ import PageFactory.Login;
 public class BaseTest {
 	
 	static WebDriver driver;
-	ConfigReader configObj = new ConfigReader();
-	Login logObj = new Login(driver);
+	ConfigReader configObj;
+	Login logObj;
 	
 	public ConfigReader getConfigReaderObj()
 	{
@@ -31,10 +31,12 @@ public class BaseTest {
 	}
 	
 	@BeforeSuite
-	public void setUp() {
+	public void suiteSetUp() {
 		driver = Utilities.setChromeDriver();
+		configObj = new ConfigReader();
 		driver.get(configObj.getURL());
 		driver.manage().window().maximize();
+		logObj = new Login(driver);
 		
 	}
 	
@@ -51,7 +53,10 @@ public class BaseTest {
 	
 	public void clickonLogout() {
 		
+		
+		System.out.println("going to click username");
 		logObj.clickonUserID();
+		System.out.println("Going to click logout");
 		logObj.clickLogoutButton();
 		
 	}
