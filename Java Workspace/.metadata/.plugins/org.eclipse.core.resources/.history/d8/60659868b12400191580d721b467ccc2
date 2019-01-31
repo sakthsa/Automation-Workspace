@@ -1,0 +1,15 @@
+package com.ss.selinium.script;
+
+import org.testng.annotations.Test;
+
+import PageFactory.Login;
+
+public class SampleTest {
+	
+	@Test
+	public void loginApp() {
+		
+		
+	}
+
+}

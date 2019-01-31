@@ -1,0 +1,18 @@
+package com.ss.selinium.script;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+import com.ss.selinium.library.Utilities;
+
+import PageFactory.Login;
+
+public class SampleTest {
+	
+	@Test
+	public void loginApp() {
+		WebDriver driver = Utilities.setChromeDriver()
+		
+	}
+
+}

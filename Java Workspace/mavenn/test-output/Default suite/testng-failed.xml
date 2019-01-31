@@ -9,7 +9,6 @@
           <include name="setUp"/>
           <include name="suiteTearDown"/>
           <include name="testTearDown"/>
-          <include name="test2"/>
         </methods>
       </class> <!-- Tests.LoginTest -->
     </classes>

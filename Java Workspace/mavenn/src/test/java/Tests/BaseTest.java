@@ -17,7 +17,7 @@ import PageFactory.Login;
 
 public class BaseTest {
 	
-	WebDriver driver;
+	static WebDriver driver;
 	ConfigReader configObj = new ConfigReader();
 	Login logObj = new Login(driver);
 	
@@ -26,6 +26,9 @@ public class BaseTest {
 		return configObj;
 	}
 	
+	public static WebDriver getDriver() {
+		return driver;
+	}
 	
 	@BeforeSuite
 	public void setUp() {
@@ -40,12 +43,14 @@ public class BaseTest {
 	@AfterMethod
 	public void testTearDown(ITestResult result) {
 		if(ITestResult.FAILURE == result.getStatus()) {
-			Utilities.captureScreenShot(driver, result.getTestName());
+			System.out.println("Test Case name : "+result.getName());
+			Utilities.captureScreenShot(driver, result.getName());
 		}
 		
 	}
 	
 	public void clickonLogout() {
+		
 		logObj.clickonUserID();
 		logObj.clickLogoutButton();
 		

@@ -15,6 +15,7 @@ import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
@@ -86,6 +87,14 @@ public class Utilities extends ConfigReader{
 		
 		
 	}
+	
+	public void clickByMouse(WebDriver driver, WebElement ele) {
+		Actions act = new Actions(driver);
+		act.moveToElement(ele).click().perform();
+		
+		
+	}
+	
 
 	
 
