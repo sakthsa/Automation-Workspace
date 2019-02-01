@@ -1,51 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="6" total="8" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21898" started-at="2019-01-31T09:06:31Z" finished-at="2019-01-31T09:06:52Z">
+  <suite name="Automation suite" duration-ms="252" started-at="2019-02-01T03:04:19Z" finished-at="2019-02-01T03:04:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21898" started-at="2019-01-31T09:06:31Z" finished-at="2019-01-31T09:06:52Z">
-      <class name="Tests.LoginTest">
-        <test-method status="PASS" signature="suiteSetUp()[pri:0, instance:Tests.LoginTest@6f7fd0e6]" name="suiteSetUp" is-config="true" duration-ms="70076" started-at="2019-01-31T09:05:20Z" finished-at="2019-01-31T09:06:31Z">
+    <test name="Test Name" duration-ms="252" started-at="2019-02-01T03:04:19Z" finished-at="2019-02-01T03:04:19Z">
+      <class name="com.ss.selenium.annotations.A">
+        <test-method status="PASS" signature="suiteBefore()[pri:0, instance:com.ss.selenium.annotations.A@6f7fd0e6]" name="suiteBefore" is-config="true" duration-ms="86" started-at="2019-02-01T03:04:18Z" finished-at="2019-02-01T03:04:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- suiteSetUp -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:Tests.LoginTest@6f7fd0e6]" name="test1" duration-ms="17386" started-at="2019-01-31T09:06:31Z" finished-at="2019-01-31T09:06:48Z">
+        </test-method> <!-- suiteBefore -->
+        <test-method status="PASS" signature="beforeTest1()[pri:0, instance:com.ss.selenium.annotations.A@6f7fd0e6]" name="beforeTest1" is-config="true" duration-ms="1" started-at="2019-02-01T03:04:19Z" finished-at="2019-02-01T03:04:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="testTearDown(org.testng.ITestResult)[pri:0, instance:Tests.LoginTest@6f7fd0e6]" name="testTearDown" is-config="true" duration-ms="997" started-at="2019-01-31T09:06:48Z" finished-at="2019-01-31T09:06:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=test1 status=SUCCESS method=LoginTest.test1()[pri:0, instance:Tests.LoginTest@6f7fd0e6] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- beforeTest1 -->
+        <test-method status="PASS" signature="beforemethod1()[pri:0, instance:com.ss.selenium.annotations.A@6f7fd0e6]" name="beforemethod1" is-config="true" duration-ms="0" started-at="2019-02-01T03:04:19Z" finished-at="2019-02-01T03:04:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testTearDown -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:Tests.LoginTest@6f7fd0e6]" name="test2" duration-ms="3382" started-at="2019-01-31T09:06:49Z" finished-at="2019-01-31T09:06:52Z">
+        </test-method> <!-- beforemethod1 -->
+        <test-method status="PASS" signature="m1()[pri:0, instance:com.ss.selenium.annotations.A@6f7fd0e6]" name="m1" duration-ms="10" started-at="2019-02-01T03:04:19Z" finished-at="2019-02-01T03:04:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="testTearDown(org.testng.ITestResult)[pri:0, instance:Tests.LoginTest@6f7fd0e6]" name="testTearDown" is-config="true" duration-ms="1" started-at="2019-01-31T09:06:52Z" finished-at="2019-01-31T09:06:52Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=test2 status=SUCCESS method=LoginTest.test2()[pri:0, instance:Tests.LoginTest@6f7fd0e6] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- m1 -->
+        <test-method status="PASS" signature="aftermethod1()[pri:0, instance:com.ss.selenium.annotations.A@6f7fd0e6]" name="aftermethod1" is-config="true" duration-ms="1" started-at="2019-02-01T03:04:19Z" finished-at="2019-02-01T03:04:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testTearDown -->
-        <test-method status="PASS" signature="suiteTearDown()[pri:0, instance:Tests.LoginTest@6f7fd0e6]" name="suiteTearDown" is-config="true" duration-ms="2041" started-at="2019-01-31T09:06:54Z" finished-at="2019-01-31T09:06:56Z">
+        </test-method> <!-- aftermethod1 -->
+        <test-method status="PASS" signature="afterTest1()[pri:0, instance:com.ss.selenium.annotations.A@6f7fd0e6]" name="afterTest1" is-config="true" duration-ms="5" started-at="2019-02-01T03:04:19Z" finished-at="2019-02-01T03:04:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- suiteTearDown -->
-      </class> <!-- Tests.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- afterTest1 -->
+        <test-method status="PASS" signature="suiteAfter()[pri:0, instance:com.ss.selenium.annotations.A@6f7fd0e6]" name="suiteAfter" is-config="true" duration-ms="1" started-at="2019-02-01T03:04:19Z" finished-at="2019-02-01T03:04:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteAfter -->
+      </class> <!-- com.ss.selenium.annotations.A -->
+      <class name="com.ss.selenium.annotations.B">
+        <test-method status="PASS" signature="m1()[pri:0, instance:com.ss.selenium.annotations.B@47c62251]" name="m1" duration-ms="4" started-at="2019-02-01T03:04:19Z" finished-at="2019-02-01T03:04:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m1 -->
+      </class> <!-- com.ss.selenium.annotations.B -->
+    </test> <!-- Test Name -->
+  </suite> <!-- Automation suite -->
 </testng-results>

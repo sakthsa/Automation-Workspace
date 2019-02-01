@@ -38,12 +38,12 @@ public class LoginTest extends BaseTest {
 	@Test
 	public void test2() {
 		
-		ExtentHtmlReporter reporter = new ExtentHtmlReporter(file)
+		ExtentHtmlReporter reporter = new ExtentHtmlReporter("./Reports/Santhosh.html");
 		driver.navigate().to(configObj.getURL());
 		logObj.setUserName(configObj.getAdminUsername());
 		logObj.setPassword(configObj.getAdminPassword());
 		logObj.clickLogin();
-		assertEquals(logObj.getPageTitle(), "OrangeHRM");
+		assertEquals(logObj.getPageTitle(), "OrangeSRM");
 	}
 	
 }
