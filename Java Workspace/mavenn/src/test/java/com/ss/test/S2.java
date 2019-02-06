@@ -4,11 +4,12 @@ public class S2 {
 	
 		  void m(S2 obj){
 		  System.out.println("method is invoked");
-		obj.p();
+		//obj.p();
 
 		  }
 		  void p(){
 		  m(this);
+		  
 		  }
 		  
 		  public static void main(String args[]){
