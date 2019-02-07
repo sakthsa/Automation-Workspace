@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test thread-count="3" name="Test(failed)" parallel="methods">
+    <parameter name="Browser" value="FF"/>
+    <classes>
+      <class name="com.ss.selinium.script.FirstProgram">
+        <methods>
+          <include name="test4"/>
+          <include name="setDriver"/>
+          <include name="teardown"/>
+          <include name="test5"/>
+        </methods>
+      </class> <!-- com.ss.selinium.script.FirstProgram -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test thread-count="3" name="Test1(failed)" parallel="methods">
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="com.ss.selinium.script.FirstProgram">
+        <methods>
+          <include name="test4"/>
+          <include name="setDriver"/>
+          <include name="teardown"/>
+          <include name="test5"/>
+        </methods>
+      </class> <!-- com.ss.selinium.script.FirstProgram -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
