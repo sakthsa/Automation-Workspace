@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;mavenn/Configuration/config.properties&apos; to &apos;Config.property&apos;" description="Rename resource &apos;config.properties&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Configuration/config.properties" name="Config.property" stamp="1548608639389" updateReferences="true"/>
-</session>

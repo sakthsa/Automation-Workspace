@@ -20,7 +20,7 @@ public class ArrayyList {
 		arrList.add(null);
 		arrList.removeAll(arrList2);
 		Iterator<String> itr = arrList.iterator();
-		
+	
 		while(itr.hasNext()) {
 			str = itr.next();
 			//if(!str.equals("Three")) 
