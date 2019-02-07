@@ -9,5 +9,4 @@ public class Stackk {
 		s.push("Two");
 		System.out.println(s);
 	}
-
 }
