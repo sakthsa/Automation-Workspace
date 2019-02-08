@@ -9,6 +9,7 @@ import java.util.Iterator;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -30,10 +31,15 @@ public class ExcelLib {
 		catch (Exception e) {
 			System.out.println(e.getMessage());
 		}}
+	
+	
 	public String getStringData(int sheetIndex, int rowIndex, int columnIndex) {
+		CellType data1 = wb.getSheetAt(sheetIndex).getRow(rowIndex).getCell(columnIndex).getCellType();
+		System.out.println(data1+" **********");
 		String data = wb.getSheetAt(sheetIndex).getRow(rowIndex).getCell(columnIndex).getStringCellValue();
 		return data;
 	}
+	
 	public void writeData(int sheetIndex, int rowIndex, int columnIndex, String value) {
 		wb.getSheetAt(sheetIndex).getRow(rowIndex).createCell(columnIndex).setCellValue(value);
 	
@@ -45,9 +51,6 @@ public class ExcelLib {
 		catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
-		
-		
-		
 	}
 	
 	public void readDataByName(String sheetName, String columnName) {
@@ -77,19 +80,21 @@ public class ExcelLib {
 						System.out.println("Cell Type : "+cell1.getCellType());
 						System.out.println("Cell Value : "+cell1.getStringCellValue());
 					}
-						
-					
 				}
 			}
 		}
-		
-		
-		
-		
 		System.out.println(columnStart +" "+columnEnd+" "+rowStart+" "+rowEnd );
 	}
-			
-		}
+	
+	
+	public int getRowCount(int sheetIndex) {
+		int rowCount = wb.getSheetAt(sheetIndex).getLastRowNum();
+		return rowCount+1;
+	}
+	
+	
+		
+}
 	
 
 

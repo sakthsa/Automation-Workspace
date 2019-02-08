@@ -14,7 +14,7 @@ public class ReadExcel {
 	
 	
 	public static void main(String[] args) throws Exception {
-		String filePath = "D:\\Java Workspace\\MyProject\\ExcelSheet.xls";
+		String filePath = "D:\\Git Folder\\Automation-Workspace\\Java Workspace\\mavenn\\ExcelSheet.xls";
 		ExcelLib excelObj = new ExcelLib(filePath);
 		System.out.println(excelObj.getStringData(0, 1, 1));
 		
