@@ -16,6 +16,8 @@ public class TreeeSet {
 		System.out.println(set.descendingSet());
 		System.out.println(set.tailSet("One",false));
 		//set.stream().filter(null);
+		TreeSet<Object> set2 = new TreeSet<>();
+		
 	}
 
 }

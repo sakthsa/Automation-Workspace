@@ -13,15 +13,15 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import com.ss.selinium.library.ConfigReader;
+import com.ss.selinium.library.ConfigReaderrr;
 import com.ss.selinium.library.Utilities;
 
 import PageFactory.Login;
 import jdk.nashorn.internal.runtime.regexp.joni.Config;
 
 
-//@Listeners(com.ss.testNG.listener.Listener.class)
-public class LoginTest extends BaseTest {
+@Listeners(com.ss.testNG.listener.Listener.class)
+public class LoginTest extends BaseTestt {
 	
 	
 	@Test

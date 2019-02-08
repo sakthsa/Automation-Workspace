@@ -25,6 +25,11 @@ public class DuplicateList {
 		//lst.add(null);
 		System.out.println(lst);
 		
+		List<Object> lst3 = new ArrayList<>();
+		lst3.add(2);
+		lst3.add("5");
+		
+		
 		List lst2 = lst.stream().distinct().collect(Collectors.toList());
 		System.out.println(lst2);
 		Set<String> set = new TreeSet(lst);

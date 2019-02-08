@@ -22,7 +22,7 @@ import org.openqa.selenium.support.ui.Wait;
 
 import com.google.common.base.Function;
 
-public class Utilities extends ConfigReader{
+public class Utilities extends ConfigReaderrr{
 	
 	public static void captureScreenShot(WebDriver driver,String FileName ) {
 		try {
@@ -36,7 +36,7 @@ public class Utilities extends ConfigReader{
 	}
 	
 	public static WebDriver setChromeDriver(){
-		ConfigReader con = new ConfigReader();
+		ConfigReaderrr con = new ConfigReaderrr();
 		System.setProperty("webdriver.chrome.driver", con.getChromePath());
 		WebDriver driver = new ChromeDriver();
 		return driver;
@@ -44,7 +44,7 @@ public class Utilities extends ConfigReader{
 	
 	
 	public static WebDriver setFirefoxDriver() {
-		ConfigReader con = new ConfigReader();
+		ConfigReaderrr con = new ConfigReaderrr();
 		System.setProperty("webdriver.gecko.driver",con.getFirefoxPath());
 		WebDriver driver = new FirefoxDriver();
 		return driver;
