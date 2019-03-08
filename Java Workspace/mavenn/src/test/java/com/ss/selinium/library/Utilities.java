@@ -50,8 +50,6 @@ public class Utilities extends ConfigReaderrr{
 		return driver;
 	}
 	
-	
-	
 	public static Wait fluentWait(WebDriver driver, WebElement webEle) {
 		Wait<WebDriver> fwait = new FluentWait<WebDriver>(driver)
 			    .withTimeout(30, TimeUnit.SECONDS)
